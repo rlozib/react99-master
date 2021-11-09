@@ -5,6 +5,7 @@ import Contents from '../layouts/Contents';
 import WrapTitle from '../layouts/WrapTitle';
 import ContInfo from '../layouts/ContInfo';
 import PortInfo from '../info/PortInfo';
+import Loading from '../layouts/Loading';
 import axios from 'axios';
 
 
@@ -12,7 +13,7 @@ import axios from 'axios';
 //함수형 컴퍼넌트 --> 리액트 훅(useEffect)
 //promise / axios
 
-class  Portfolio extends React.Component {
+class Portfolio extends React.Component {
     state = {
         isLoading: true,
         ports : []
@@ -45,9 +46,7 @@ class  Portfolio extends React.Component {
         return (
             <div>
                 {isLoading ? (
-                    <div className="loading">
-                        <span>로딩중....</span>
-                    </div>
+                    <Loading />
                 ) : ( 
                     <div>
                         <Header />
