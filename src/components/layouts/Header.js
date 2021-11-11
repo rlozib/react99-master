@@ -14,8 +14,8 @@ function Header(){
                     <li><Link to="/script">Script</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
-                <a href="/" class="ham">
-                    <span class="sr-only">menu</span>
+                <a href="/" className="ham">
+                    <span className="sr-only">menu</span>
                 </a>
             </nav>
         </header>
